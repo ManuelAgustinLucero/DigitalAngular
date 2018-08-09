@@ -1,0 +1,348 @@
+<body class="profile-page sidebar-collapse">
+
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/city-profile.jpg');"></div>
+  <div class="main main-raised">
+    <div class="profile-content">
+      <div class="container">
+        <div *ngIf="first == true">
+          <div class="description text-center">
+            <p>Seleccione miniatura&#x2014; the name taken by Melbourne-raised, Brooklyn-based Nick Murphy &#x2014; writes,
+              performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6 ml-auto mr-auto">
+              <div class="profile-tabs">
+                <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#tab1" role="tab" data-toggle="tab" (click)="onChangeCard(1)">
+                      <i class="material-icons">camera</i> Studio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab2" role="tab" data-toggle="tab" (click)="onChangeCard(2)">
+                      <i class="material-icons">palette</i> Work
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab3" role="tab" data-toggle="tab" (click)="onChangeCard(3)">
+                      <i class="material-icons">favorite</i> Favorite
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#tab4" role="tab" data-toggle="tab" (click)="onChangeCard(4)">
+                      <i class="material-icons">camera</i> Studio
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab5" role="tab" data-toggle="tab" (click)="onChangeCard(5)">
+                      <i class="material-icons">palette</i> Work
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab6" role="tab" data-toggle="tab" (click)="onChangeCard(6)">
+                      <i class="material-icons">favorite</i> Favorite
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab7" role="tab" data-toggle="tab" (click)="onChangeCard(7)">
+                      <i class="material-icons">favorite</i> Favorite
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tab8" role="tab" data-toggle="tab" (click)="onChangeCard(8)">
+                      <i class="material-icons">favorite</i> Favorite
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content tab-space">
+            <div class="tab-pane active text-center gallery" id="tab1">
+              <div class="row">
+                <div class="col-md-12 ml-auto">
+                  <div class="card-box col-md-4 col-sm-6 offset-4">
+                    <div class="card card-with-border card-just-text" data-background="color" data-color="black">
+                      <div class="content">
+                        <h4 class="title">"In the end we only
+                          <b>regret</b> the chances we didn't take."</h4>
+                        <a [routerLink]="['/noticia/26']">
+                          <p class="description">- Hipster Quote</p>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane text-center gallery" id="tab2">
+              <div class="row">
+                <div class="card-box col-md-4 col-sm-6 offset-4">
+                  <div class="card">
+                    <div class="header">
+                      <img src="../assets/cards/img/lifestyle-1.jpg" />
+                      <div class="filter"></div>
+
+                      <div class="actions">
+                        <button class="btn btn-round btn-fill btn-neutral btn-modern">
+                          Read Article
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <h6 class="category">News</h6>
+                      <h4 class="title">
+                        <a href="#">Try the new hairstyle from this Barber Shop </a>
+                      </h4>
+                      <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing
+                        authority and security. I feel like Raleway and Roboto do just that.</p>
+                    </div>
+                  </div>
+                  <!-- end card -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane text-center " id="tab3">
+              <div class="row">
+                <div class="card-box col-md-4 col-sm-6 offset-4">
+                  <div class="card">
+                    <div class="header">
+                      <img src="./assets/cards/img/beard-1.jpg" />
+
+                      <div class="social-line social-line-visible" data-buttons="4">
+                        <button class="btn btn-social btn-facebook">
+                          <i class="fa fa-facebook"></i>
+                        </button>
+                        <button class="btn btn-social btn-twitter">
+                          <i class="fa fa-twitter"></i>
+                        </button>
+                        <button class="btn btn-social btn-pinterest">
+                          <i class="fa fa-pinterest"></i>
+                        </button>
+                        <button class="btn btn-social btn-google">
+                          <i class="fa fa-google-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <h6 class="category">News</h6>
+                      <h4 class="title">Use this card and see what you can achive</h4>
+                      <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing
+                        authority and security. I feel like Raleway and Roboto do just that.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane  text-center gallery" id="tab4">
+              <div class="row">
+                <div class="card-box col-md-4 col-sm-6 offset-4">
+                  <div class="card" data-background="image" data-src="/assets/cards/img/lifestyle-2.jpg">
+                    <div class="header">
+                      <div class="category">
+                        <h6 class="label label-warning">Trending Post</h6>
+                      </div>
+
+                      <div class="social-line" data-buttons="3">
+                        <button class="btn btn-social btn-facebook">
+                          <i class="fa fa-facebook-square"></i> Share
+                        </button>
+                        <button class="btn btn-social btn-twitter">
+                          <i class="fa fa-twitter"></i> Tweet
+                        </button>
+                        <button class="btn btn-social btn-pinterest">
+                          <i class="fa fa-pinterest"></i> Pin
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <h4 class="title">Tobias Van Schneider is a German designer raised in Austria...</h4>
+                      <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing
+                        authority and security.</p>
+                    </div>
+                    <div class="filter"></div>
+                  </div>
+                  <!-- end card -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane text-center gallery" id="tab5">
+              <div class="row">
+                <div class="card-box col-md-4 col-sm-6 offset-4">
+                  <div class="card" data-background="color" data-color="black">
+                    <div class="header">
+                      <img src="/assets/cards/img/home-1.jpg" />
+
+                      <div class="social-line" data-buttons="2">
+                        <button class="btn btn-social">
+                          <i class="fa fa-facebook-square"></i> Share
+                        </button>
+                        <button class="btn btn-social">
+                          <i class="fa fa-twitter"></i> Tweet
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="content">
+                      <h6 class="category">Interior Design</h6>
+                      <h4 class="title">
+                        <a href="#">Hipster Apartment sold for $1.2 mil.</a>
+                      </h4>
+                      <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing
+                        authority and security. I feel like Raleway and Roboto do just that.</p>
+                    </div>
+                  </div>
+                  <!-- end card -->
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane text-center " id="tab6">
+              <div class="row">
+                <div class="card-box col-md-4 col-sm-6 offset-4">
+                  <div class="card text-center" data-background="image" data-src="/assets/cards/img/city-1.jpg">
+                    <h4 class="title title-modern">Hipster City</h4>
+
+                    <div class="content">
+                      <div class="price">
+                        <h6>From</h6>
+                        <h4>1.499
+                          <b class="currency">$</b>
+                        </h4>
+                      </div>
+                    </div>
+
+                    <div class="footer btn-center">
+                      <button class="btn btn-neutral btn-round btn-modern">Buy Ticket</button>
+                    </div>
+
+                    <div class="filter filter-blue"></div>
+                  </div>
+                  <!-- end card -->
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane text-center " id="tab7">
+              <div class="row">
+                <div class="card-box col-md-4 col-sm-6 offset-4">
+                  <div class="card card-with-border" data-background="color" data-color="azure">
+                    <div class="header">
+                      <div class="icon">
+                        <i class="pe-7s-radio"></i>
+                      </div>
+                    </div>
+                    <div class="content text-center">
+                      <h4 class="title title-modern">Nicecream.fm</h4>
+                      <p class="description">Best vibes in the marketplace. Listen to the best music from '89. I feel like Nicecream and .fm do
+                        just that.
+                      </p>
+                    </div>
+                    <div class="footer text-center">
+                      <button class="btn btn-neutral btn-round btn-fill btn-modern">Listen Now!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane text-center " id="tab8">
+              <div class="row">
+                <div class="card-box col-md-4 col-sm-6 offset-4">
+                  <div class="card text-center" data-background="image" data-src="/assets/cards/img/city-2.png">
+                    <h4 class="title title-modern">Hipster Vacation</h4>
+
+                    <div class="content">
+                      <div class="price">
+                        <h6>From</h6>
+                        <h4>2.799
+                          <b class="currency">$</b>
+                        </h4>
+                      </div>
+                      <p class="description">When selling products it's always a good idea to go with commanding fonts that are good at showing
+                        authority and security.</p>
+                    </div>
+                    <div class="filter"></div>
+                    <div class="footer btn-center">
+                      <button class="btn btn-neutral btn-round btn-fill">Book Now!</button>
+                    </div>
+                  </div>
+                  <!-- end card -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description text-center">
+            <button class="btn btn-modern btn-primary text-center pull-center" (click)="OnClickNext()">Siguiente</button>
+            <br>
+            <br>
+          </div>
+        </div>
+        <form #formLogin="ngForm" (ngSubmit)="onPost()" class="form" method="" action="">
+          <div class="main main-raised" *ngIf="second">
+            <div class="section section-basic">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <div class="name text-center">
+                      <h3 class="title">
+                        <input #title="ngModel" name="title" [(ngModel)]="notica.title" type="text" class="form-control text-center" placeholder="Titulo...">
+                      </h3>
+                      <h6>
+                        <input [(ngModel)]="notica.subTitle"  #subTitle="ngModel" name="subTitle"  type="text" class="form-control text-center" placeholder="Sub Titulo...">
+                      </h6>
+                      <a href="" class="btn btn-just-icon btn-link btn-dribbble disable-links">
+                        <i class="fa fa-dribbble"></i>
+                      </a>
+                      <a href="" class="btn btn-just-icon btn-link btn-twitter disable-links">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                      <a href="#" class="btn btn-just-icon btn-link btn-pinterest disable-links">
+                        <i class="fa fa-pinterest"></i>
+                      </a>
+                    </div>
+                    <div class=" text-center">
+                      <label for="">Categoria</label>
+                        <select [(ngModel)]="notica.business"  #business="ngModel" name="business"  id=""  class="form-control text-center">
+                              <option value="0"></option>
+                              <option value='1'>General</option>
+                              <option value='2'>Politica</option>
+                              <option value='3'>Deporte</option>
+      
+                        </select>
+                      </div>
+                  </div>
+                </div>
+            
+                <br>
+                <img class="card-img-top" src="./assets/img/bg3.jpg" alt="Card image cap">
+                  <input type="file" (change)="saverange($event)"
+                  >
+                <blockquote class="blockquote">
+                  <footer class="blockquote-footer">
+                      <input [(ngModel)]="notica.imageDescription"  #imageDescription="ngModel" name="imageDescription"  type="text" class="form-control text-center" placeholder="Description de imagen...">
+                  </footer>
+                </blockquote>
+              </div>
+              <div class="container">
+                  <h6 class="text-center">Texto</h6>
+                <div class="row">
+                  <div class="col-md-10 ml-auto mr-auto">
+                    <div class=" text-center">
+                        <textarea placeholder="Texto..."   [(ngModel)]="notica.text" #text="ngModel"  name="text"  class="form-control bg-light" id="" cols="30" rows="10"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer text-center">
+                  <input  class="btn btn-primary  " type="submit" value="Crear">
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

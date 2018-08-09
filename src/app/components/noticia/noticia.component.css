@@ -1,0 +1,93 @@
+.profile-page .page-header {
+    height: 380px !important;
+    background-position: top center!important;
+  }
+  
+  .profile-page .profile {
+    text-align: center!important;
+  }
+  
+  .profile-page .profile img {
+    max-width: 160px!important;
+    width: 100%!important;
+    margin: 0 auto!important;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
+  
+  .profile-page .profile .name {
+    margin-top: -80px!important;
+  }
+  
+  .profile-page .follow {
+    position: absolute!important;
+    top: 0!important;
+    right: 0!important;
+  }
+  
+  .profile-page .description {
+    margin: 1.071rem auto 0!important;
+    max-width: 600px!important;
+  }
+  
+  .profile-page .profile-tabs {
+    margin-top: 4.284rem!important;
+  }
+  
+  .profile-page .gallery {
+    margin-top: 3.213rem!important;
+    padding-bottom: 50px!important;
+  }
+  
+  .profile-page .gallery img {
+    width: 100%!important;
+    margin-bottom: 2.142rem!important;
+  }
+  
+  .profile-page .follow .btn-fab {
+    margin-top: -28px!important;
+  }
+  
+  .profile-page .card-background .content {
+    padding: 30% 0!important;
+    min-width: 160px!important;
+  }
+  
+  .profile-page .work {
+    padding: 40px 0px!important;
+  }
+  
+  .profile-page .work .collections {
+    margin-top: 20px!important;
+  }
+  
+  .profile-page .work .stats ul>li {
+    padding: 5px 0px!important;
+    font-size: 1em!important;
+  }
+  
+  .profile-page .work .stats ul>li b {
+    font-size: 1.2em!important;
+  }
+  
+  .profile-page .connections {
+    padding: 40px 0px!important;
+  }
+  
+  .profile-page .connections .card-profile {
+    text-align: left!important;
+  }
+  
+  .profile-page .tab-content .collections .card .card-body {
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: center!important;
+  }
+  
+  .profile-page .tab-content .collections .card .card-body .badge {
+    display: inline-table!important;
+    margin: 0 auto!important;
+  }

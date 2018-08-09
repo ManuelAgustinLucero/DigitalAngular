@@ -1,0 +1,88 @@
+<body class="profile-page" *ngIf="noticia">
+  <div class="page-header header-filter clear-filter purple-filter" data-parallax="true" style="background-image: url('./assets/img/bg3.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+            <h1>{{noticia.title}}</h1>
+            <h3>{{noticia.sub_title}}</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+    <div class="section section-basic">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 ml-auto mr-auto">
+            <div class="name text-center">
+              <h3 class="title">{{noticia.title}}</h3>
+              <h6>{{noticia.sub_title}}</h6>
+              <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble">
+                <i class="fa fa-dribbble"></i>
+              </a>
+              <a href="#pablo" class="btn btn-just-icon btn-link btn-twitter">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#pablo" class="btn btn-just-icon btn-link btn-pinterest">
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" text-center">
+          <p>{{noticia.text}} </p>
+        </div>
+        <img class="card-img-top" src="./assets/img/bg3.jpg" alt="Card image cap">
+
+        <blockquote class="blockquote">
+          <footer class="blockquote-footer">El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados.
+            Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su
+            forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.
+            <cite title="Source Title">Manuel Agustin Lucero</cite>
+          </footer>
+        </blockquote>
+
+
+
+
+        <h6 class="text-center">Comentarios</h6>
+        <div class="container">
+          <form #formComentario="ngForm" (ngSubmit)="onComment()" class="form">
+            <div class="row">
+              <div class="col-md-12 comentario-single ">
+                <div class="form-group">
+                  <label for="">Escribe tu comentario</label>
+                  <textarea #comment="ngModel" name="comment" [(ngModel)]="comentario.comment" class="form-control bg-light" id="comentario" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary pull-right ">Comentar</button>
+              </div>
+            </div>
+          </form>
+          <hr>
+          <div *ngFor="let row of comentarios">
+            <div class="col-xs-12 comentario-single " id="Comentarios">
+              <div class=" col-xs-4">
+                <div class="close">
+                  <span (click)="deleteComment(row.id)" class="text-danger">x</span>
+
+                </div>
+                <div class="avatar">
+                  <img style="float:left; margin:10px; height: 40px" class="img-raised rounded-circle img-fluid" src="assets/img/faces/avatar.jpg">
+                </div>
+                <h3>manuel</h3>
+                <span>{{ row.comment }}</span>
+              </div>
+              <div class="comentario-text col-xs-8 close">
+              </div>
+              <hr>
+            </div>
+            <div class="col-xs-12 comentario-single borrado" id="Comentarios">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,43 @@
+.login-page .footer {
+    position: absolute !important;
+    width: 100% !important;
+    background: transparent !important;
+    bottom: 0 !important; 
+    color: #fff !important;
+    z-index: 1 !important;
+  }
+  
+  .login-page .footer .copyright a {
+    color: #fff !important;
+  }
+  .index-page .section-components h6.description {
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  
+  .index-page .page-header {
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .index-page .brand {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .index-page .brand h1 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .index-page .brand h3 {
+    font-size: 1.313rem;
+    max-width: 500px;
+    margin: 10px auto 0;
+  }
+  
+  .index-page h4.description {
+    font-size: 1.5em;
+  }
